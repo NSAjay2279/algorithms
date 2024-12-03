@@ -39,4 +39,6 @@ display(Head)
 
 # Search for node value - O(n)
 def search(head, val):
-    curr
+    curr = head
+    while curr:
+        if val == curr.val:
