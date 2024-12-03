@@ -4,3 +4,6 @@ class DoublyNode:
         self.next = next
         self.prev = prev
 
+def __str__(self):
+    return str(self.val)
+
