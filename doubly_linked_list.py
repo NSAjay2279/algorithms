@@ -8,4 +8,6 @@ def __str__(self):
     return str(self.val)
 
 head = tail = DoublyNode(1)
-print(head)
+print(tail)
+
+# 
