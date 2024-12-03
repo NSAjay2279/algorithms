@@ -4,11 +4,11 @@ class DoublyNode:
         self.next = next
         self.prev = prev
 
-def __str__(self):
-    return str(self.val)
+    def __str__(self):
+        return str(self.val)
 
 head = tail = DoublyNode(1)
-print(tail)
+print(head)
 
 # Display - O(n)
 def display(head):
@@ -27,3 +27,7 @@ def insert_at_beginning(head, tail, val):
     new_node = DoublyNode(val, next=head)
     head.prev = new_node
     return new_node, tail
+
+
+head, tail = insert_at_beginning(head, tail, 3)
+display(head)
