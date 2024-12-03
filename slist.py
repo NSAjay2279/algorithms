@@ -33,4 +33,10 @@ def display(head):
     while curr:
         elements.append(str(curr.val))
         curr = curr.next
-        
+    print(' -> '.join(elements))
+
+display(Head)
+
+# Search for node value - O(n)
+def search(head, val):
+    curr
