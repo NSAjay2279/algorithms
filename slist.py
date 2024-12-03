@@ -47,4 +47,4 @@ def search(head, val):
 
     return False
 
-search(Head, 2)
+print(search(Head, 2))
