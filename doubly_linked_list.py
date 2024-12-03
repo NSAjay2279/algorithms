@@ -13,9 +13,9 @@ print(tail)
 # Display - O(n)
 def display(head):
     curr = head
-    element = []
+    elements = []
     while curr:
-        element.append(str(curr.val))
+        elements.append(str(curr.val))
         curr = curr.next
     print(' <-> '.join(elements))
 
