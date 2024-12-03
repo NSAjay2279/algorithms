@@ -18,4 +18,5 @@ def display(head):
         element.append(str(curr.val))
         curr = curr.next
     print(' <-> '.join(elements))
-displa
+
+display(head)
