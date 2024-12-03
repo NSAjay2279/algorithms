@@ -42,4 +42,5 @@ def insert_at_end(head, tail, val):
 
 head, tail = insert_at_end(head, tail, 7)
 display(head)
+display(tail)
 
