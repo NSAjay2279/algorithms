@@ -9,9 +9,11 @@ class SinglyNode:
 
 Head = SinglyNode(1)
 A = SinglyNode(3)
-B = SingltNode(4)
+B = SinglyNode(4)
 C = SinglyNode(7)
 
 Head.next = A
 A.next = B
 B.next = C
+
+print(Head)
