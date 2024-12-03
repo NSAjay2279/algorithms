@@ -30,4 +30,7 @@ def insert_at_beginning(head, tail, val):
 
 
 head, tail = insert_at_beginning(head, tail, 3)
-display(tail)
+display(head)
+head, tail = insert_at_beginning(head, tail, 4)
+display(head)
+
