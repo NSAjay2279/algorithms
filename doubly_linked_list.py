@@ -25,3 +25,5 @@ display(head)
 # Insert at beginning - O(1)
 def insert_at_beginning(head, tail, val):
     new_node = DoublyNode(val, next=head)
+    head.prev = new_node
+    return new_node, tail
