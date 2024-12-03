@@ -19,8 +19,18 @@ Head.next = A
 A.next = B
 B.next = C
 
+# Traverse the list - O(n)
 curr = Head
 
 while curr:
     print(curr)
     curr = curr.next
+
+# Display linked list - O(n)
+def display(head):
+    curr = Head
+    elements = []
+    while curr:
+        elements.append(str(curr.val))
+        curr = curr.next
+        
