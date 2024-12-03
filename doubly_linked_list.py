@@ -10,4 +10,7 @@ def __str__(self):
 head = tail = DoublyNode(1)
 print(tail)
 
-# 
+# Display - O(n)
+def display(head):
+    curr = head
+    elel
