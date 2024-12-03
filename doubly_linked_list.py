@@ -37,7 +37,7 @@ display(head)
 # Insert at end - O(1)
 def insert_at_end(head, tail, val):
     new_node = DoublyNode(val, prev=tail)
-    prev.next = new_node
+    tail.next = new_node
     return head, new_node
 
 head, tail = insert_at_end(head, tail, 7)
