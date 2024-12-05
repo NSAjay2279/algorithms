@@ -1,29 +1,22 @@
 <script type="text/javascript">
-    function bSort(array) {
-        while (true) {
-            for (var i = 0; i < array.length - 1; i++) {
-                var counter = 0;
-                if (array[i] = array[i+1]) {
-                    continue;
+    class BubbleSort {
+        static sort(arrays) {
+            for (var i = 0; i < arrays.length - 1; i++) {
+                for (var j = 0; j < arrays.length - i - 1; j++) {
+                    //swap
+                    if (arrays[j] > arrays[j + 1]) {
+                        var flag = arrays[j];
+                        arrays[j] = arrays[j + 1];
+                        arrays[j + 1] = flag;
+                    }
                 }
-                if (array[i] > array[i+1]) {
-                    var temp = array[i];
-                    array[i] = array[i+1];
-                    array[i+1] = temp;
-                    counter++;
-                }
-            }
-            if (counter > 0) {
-                continue;
-            }
-            else {
-                return array;
             }
         }
     }
-
-    var values = [60, 50, 95, 80, 70];
-    document.write("sorted array of numbers: " + bSort(values));
-
+    //////////////////////testing////////////////////
+    var scores = [60, 50, 95, 80, 70];
+    BubbleSort.sort(scores);
+    for (var i = 0; i < scores.length; i++) {
+        document.write(scores[i] + ",");
+    }
 </script>
-
