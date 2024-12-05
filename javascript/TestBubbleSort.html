@@ -1,9 +1,9 @@
-<script>
+<script type="text/javascript">
     function bSort(array) {
         while (true) {
             for (var i = 0; i < array.length - 1; i++) {
                 var counter = 0;
-                if (array[i] >= array[i+1]) {
+                if (array[i] > array[i+1]) {
                     var temp = array[i];
                     array[i] = array[i+1];
                     array[i+1] = temp;
@@ -19,7 +19,7 @@
         }
     }
 
-    var values = [60, 50, 95, 80, 70, 70, 98, 11]
+    var values = [60, 50, 95, 80, 70];
     document.write("sorted array of numbers: " + bSort(values));
 
 </script>
