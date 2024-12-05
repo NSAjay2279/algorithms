@@ -3,15 +3,13 @@
         var minValue = array[0];
         var l = array.length - 1;
         for(i = 0; i < l; i++) {
-            for(j = 0; i < l; j++) {
-                if(array[j + 1] < minValue) {
-                    minValue = array[j + 1];
-                }
+            if(array[i + 1] <= minValue) {
+                minValue = array[i + 1];
             }
         }
         return minValue;
     }
 
-    array = [5, 90, 2, 1, 7];
+    array = [5, 90, 1, 7, 100, 500, 23, 3, 4, 8, 1];
     document.write("minimum value: " + minValue(array));
 </script>
