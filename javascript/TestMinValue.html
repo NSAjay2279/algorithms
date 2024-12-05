@@ -4,11 +4,8 @@
         var l = array.length - 1;
         for(i = 0; i < l; i++) {
             for(j = 0; i < l; j++) {
-                if(minValue < array[j+1]) {
+                if(array[j + 1] < minValue) {
                     minValue = array[i];
-                }
-                else {
-                    minValue = array[j];
                 }
             }
         }
