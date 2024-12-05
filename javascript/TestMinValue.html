@@ -1,17 +1,18 @@
 <script>
-    function minimumValue(array) {
+    function minValue(array) {
         var minValue = 0;
         var l = array.length - 1;
         for(i = 0; i < l; i++) {
             for(j = 0; i < l; j++) {
                 if(array[i] < array[j]) {
-                    minValue = 
+                    minValue = array[i];
                 }
             }
         }
+        return minValue;
     }
 
+    array = [5, 90, 2, 1, 7]
 
-
-    minValue = minimumValue(array)
+    document.write("minimum value: " + minValue(array));
 </script>
