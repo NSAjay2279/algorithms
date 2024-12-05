@@ -2,10 +2,18 @@
     function bSort(array) {
         while (true) {
             for (var i = 0; i < array.length - 1; i++) {
+                counter = 0;
                 if (array[i] < array[i+1]) {
                     var temp = array[i];
                     array[i] = array[i+1];
                     array[i+1] = temp;
+                    counter++;
+                }
+                if (counter > 0) {
+                    continue;
+                }
+                else {
+                    return array;
                 }
             }
         }
