@@ -1,1 +1,16 @@
-shortest_line_index(lines
+
+
+shortest_line_index(lines, n):
+
+
+
+solve(lines, n, m)
+
+
+def main():
+
+
+main()
+
+
+
