@@ -14,7 +14,7 @@ def main():
     i = 0
     n, m = input().split()
     for i in range(n):
-        listinput()
+        lines[i] = input()
 
 
 main()
