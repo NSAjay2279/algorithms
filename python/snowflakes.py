@@ -8,7 +8,7 @@ def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
             return 0
     return 1
 
-def identical_left(snow1: list, snow2: list, start: int):
+def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     snow2_index = 0
     for offset in range(6):
