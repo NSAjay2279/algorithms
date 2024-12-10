@@ -28,7 +28,7 @@ def main():
     solve(lines, n, m)
 
 
-main()
+if __name__ = "__main__"
 
 
 
