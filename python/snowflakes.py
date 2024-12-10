@@ -22,7 +22,18 @@ def identical_left(snow1: list, snow2: list, start: int):
         snow2_index = start - offset
         if snow2_index <= -1:
             snow2_index = snow2_index + 6
-        if snow1[offset] != snow2[snow2_]
+        if snow1[offset] != snow2[snow2_index]:
+            return 0
+    return 1
+
+def are_identical(snow1: list, snow2: list):
+    start = 0
+    for start in range(6):
+        if identical_right(snow1, snow2, start):
+            return 1
+        if identical_left(snow1, snow2, start):
+            return 1
+        return 0
 
 
 if __name__ == "__main__":
