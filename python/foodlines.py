@@ -15,6 +15,7 @@ def main():
     n, m = input().split()
     for i in range(n):
         lines[i] = input()
+    solve(lines, n, m)
 
 
 main()
