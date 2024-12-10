@@ -5,8 +5,8 @@ def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     for offset in range(6):
         if snow2_index != snow2[(start + offset) % 6]:
-            return 0
-    return 1
+            return False
+    return True
 
 def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
@@ -16,17 +16,17 @@ def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
         if snow2_index <= -1:
             snow2_index = snow2_index % 6
         if snow1[offset] != snow2[snow2_index]:
-            return 0
-    return 1
+            return False
+    return True
 
 def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     start = 0
     for start in range(6):
         if identical_right(snow1, snow2, start):
-            return 1
+            return True
         if identical_left(snow1, snow2, start):
             return 1
-        return 0
+        return False
 
 
 def identify_identical(snowflakes: list[list[int]], n: int) -> None:
