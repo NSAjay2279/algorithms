@@ -15,7 +15,7 @@ def identical_right(snow1: list, snow2: list, start: int):
             return False
     return True
 
-int 
+def 
 
 
 if __name__ == "__main__":
