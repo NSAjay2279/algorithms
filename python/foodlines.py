@@ -1,6 +1,7 @@
 MAX_LINES = 100
 
-def shortest_line_index(lines: list, n: int):
+
+def shortest_line_index(lines: list , n: int):
     j: int = 1
     shortest: int = 0
     for j in range(n):
@@ -23,7 +24,7 @@ def main():
     m: int = 0
     i: int = 0
     n, m = list(map(int, input().split()))
-    lines: int = list(map(int, input().split()))
+    lines: list = list(map(int, input().split()))
     solve(lines, n, m)
 
 
