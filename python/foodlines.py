@@ -1,4 +1,4 @@
-
+MAX_LINES = 100
 
 shortest_line_index(lines, n):
 
