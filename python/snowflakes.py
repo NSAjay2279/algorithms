@@ -3,7 +3,7 @@ def identify_identical(values[]: list, n: int):
     for i in range(n):
         for j in range(n):
             if values[i] == values[j]:
-                print("Twin integers found.\");
+                print("Twin integers found.\n");
                 return;
     print("No two integers are alike.\n")
 
