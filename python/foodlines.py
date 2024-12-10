@@ -22,7 +22,7 @@ def main():
     n = 0
     m = 0
     i = 0
-    n, m = int(input().split())
+    n, m = input().split())
     for i in range(n):
         lines[i] = input()
     solve(lines, n, m)
