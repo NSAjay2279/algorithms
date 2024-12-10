@@ -1,8 +1,8 @@
 MAX_LINES = 100
 
 def shortest_line_index(lines: list, n: int):
-    j = 1
-    shortest = 0
+    j: int = 1
+    shortest: int = 0
     for j in range(n):
         if lines[j] < lines[shortest]:
             shortest = j
