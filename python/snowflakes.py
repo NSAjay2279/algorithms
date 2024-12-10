@@ -1,5 +1,5 @@
 SIZE = 100000
-SNOWFLAKES = [][] * SIZE * 6
+SNOWFLAKES = [SIZE][6]
 
 def identical_right(snow1: list, snow2: list, start: int):
     offset = 0
