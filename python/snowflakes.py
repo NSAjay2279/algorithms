@@ -10,14 +10,17 @@ def identify_identical(values: list, n: int):
 
 def identical_right(snow1: list, snow2: list, start: int):
     offset = 0
+    for offset in range(6):
+        if snow2_index != snow2[(start + offset) % 6]:
+            return 0
+    return 1
+
+def identical_left(snow1: list, snow2: list, start: int):
+    offset = 0
     snow2_index = 0
     for offset in range(6):
-        snow2_index = start + offset
-        if snow2_index >= 6:
-            snow2_index = snow2_index - 6
-            
-
-def
+        snow2_index = start - offset
+        
 
 
 if __name__ == "__main__":
