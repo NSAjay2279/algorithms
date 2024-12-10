@@ -8,6 +8,11 @@ solve(lines, n, m)
 
 
 def main():
+    lines = []
+    n = 0
+    m = 0
+    i = 0
+    n, m = input().split(,)
     
 
 
