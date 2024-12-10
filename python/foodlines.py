@@ -1,6 +1,6 @@
 MAX_LINES = 100
 
-shortest_line_index(lines, n):
+def shortest_line_index(lines, n):
     j = 1
     shortest = 0
     for j in range(n):
@@ -9,7 +9,7 @@ shortest_line_index(lines, n):
     return shortest
 
 
-solve(lines, n, m):
+def solve(lines, n, m):
     i = 0
     shortest = 0
     for i in range(m):
@@ -28,7 +28,8 @@ def main():
     solve(lines, n, m)
 
 
-if __name__ = "__main__"
+if __name__ = "__main__":
+    main()
 
 
 
