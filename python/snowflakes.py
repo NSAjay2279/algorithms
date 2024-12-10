@@ -1,3 +1,6 @@
+SIZE = 100000
+
+
 def identify_identical(values: list, n: int):
     i = 0
     j = 1
@@ -34,6 +37,8 @@ def are_identical(snow1: list, snow2: list):
         if identical_left(snow1, snow2, start):
             return 1
         return 0
+
+def main():
 
 
 if __name__ == "__main__":
