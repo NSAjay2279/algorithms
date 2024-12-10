@@ -44,6 +44,9 @@ def main():
     i = 0
     j = 0
     n = int(input())
+    for i in range(n):
+        for j in range(6):
+            snowflakes[i][j] = input()
 
 if __name__ == "__main__":
     main()
