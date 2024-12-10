@@ -1,7 +1,12 @@
-x = 5
+gloab 5
+
+def f():
+    print(x)
+    x += 1
 
 def main():
-    print(x)
-    x++
+    f()
+    f()
+    f()
 
-
+main()
