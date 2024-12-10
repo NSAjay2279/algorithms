@@ -44,10 +44,8 @@ def main():
     i = 0
     j = 0
     n = int(input())
-    for i in range(n):
-        for j in range(6):
-            snowflakes[i][j] = int(input())
-        indentify_indentical(snowflakes, n)
+    snowflakes[i][j] = int(input())
+    indentify_indentical(snowflakes, n)
 
 if __name__ == "__main__":
     main()
