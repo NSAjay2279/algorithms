@@ -12,9 +12,10 @@ def identical_right(snow1: list, snow2: list, start: int):
     offset = 0
     snow2_index = 0
     for offset in range(6):
-        if snow1[offset] != snow2[start + offset]:
-            return False
-    return True
+        snow2_index = start + offset
+        if snow2_index >= 6:
+            snow2_index = snow2_index - 6
+            
 
 def
 
