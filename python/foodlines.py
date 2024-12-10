@@ -8,7 +8,7 @@ solve(lines, n, m)
 
 
 def main():
-    lines = []
+    lines = [0] * MAX_LINES
     n = 0
     m = 0
     i = 0
