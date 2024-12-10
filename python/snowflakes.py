@@ -40,7 +40,6 @@ def identify_identical(snowflakes: list[list[int]], n: int) -> None:
     print("No two snowflakes are alike.\n");
 
 def main():
-    global snowflakes
     n = 0
     i = 0
     j = 0
