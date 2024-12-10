@@ -42,9 +42,9 @@ def identify_identical(snowflakes: list[list[int]], n: int) -> None:
 def main():
     n = 0
     i = 0
-    j = 0
     n = int(input())
-    snowflakes = list(map(int, input().split()))
+    for i in range(n):
+        snowflakes.append(list(map(int, input().split())))
     identify_identical(snowflakes, n)
 
 if __name__ == "__main__":
