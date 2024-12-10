@@ -19,7 +19,7 @@ def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
             return 0
     return 1
 
-def are_identical(snow1: list[int], snow2: list):
+def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     start = 0
     for start in range(6):
         if identical_right(snow1, snow2, start):
