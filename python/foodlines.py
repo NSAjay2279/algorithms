@@ -6,7 +6,7 @@ shortest_line_index(lines, n):
     for j in range(n):
         if lines[j] < lines[shortest]:
             shortest = j
-        return shortest
+    return shortest
 
 
 solve(lines, n, m):
