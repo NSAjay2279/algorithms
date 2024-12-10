@@ -8,9 +8,14 @@ def identify_identical(values: list, n: int):
                 return;
     print("No two integers are alike.\n")
 
-def main():
-    a = [1, 2, 3, 1, 5]
-    identify_identical(a, 5)
+def identical_right(snow1: list, snow2: list, start: int):
+    offset = 0
+    for offset in range(6):
+        if snow1[offset] != snow2[start + offset]:
+            return False
+    return True
+
+
 
 
 if __name__ == "__main__":
