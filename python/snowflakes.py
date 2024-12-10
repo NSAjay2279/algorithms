@@ -1,5 +1,5 @@
 SIZE = 100000
-SNOWFLAKES = [][6]
+SNOWFLAKES = [][] * SIZE * 6
 
 def identify_identical(values: list, n: int):
     i = 0
@@ -39,7 +39,11 @@ def are_identical(snow1: list, snow2: list):
         return 0
 
 def main():
-
+    global snowflakes
+    n = 0,
+    i = 0
+    j = 0
+    n = int(input())
 
 if __name__ == "__main__":
     main()
