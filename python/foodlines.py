@@ -13,7 +13,8 @@ def main():
     m = 0
     i = 0
     n, m = input().split()
-    for i in range()
+    for i in range(n):
+        list input()
 
 
 main()
