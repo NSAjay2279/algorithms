@@ -10,12 +10,13 @@ def identify_identical(values: list, n: int):
 
 def identical_right(snow1: list, snow2: list, start: int):
     offset = 0
+    snow2_index = 0
     for offset in range(6):
         if snow1[offset] != snow2[start + offset]:
             return False
     return True
 
-def 
+def
 
 
 if __name__ == "__main__":
