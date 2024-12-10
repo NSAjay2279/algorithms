@@ -1,1 +1,1 @@
-shortest_line_index(int lines)
+shortest_line_index(lines
