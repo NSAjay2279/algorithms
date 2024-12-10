@@ -19,14 +19,11 @@ def solve(lines, n, m):
 
 
 def main():
-    lines = [0] * MAX_LINES
     n = 0
     m = 0
     i = 0
     n, m = list(map(int, input().split()))
-    people_per_line = list(map(int, input().split()))
-    for i in range(n):
-        lines[i] = people_per_line[i]
+    lines = list(map(int, input().split()))
     solve(lines, n, m)
 
 
