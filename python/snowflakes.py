@@ -38,7 +38,11 @@ def are_identical(snow1: list[int], snow2: list):
             return 1
         return 0
 
-def identify identical(snowflakes[][6]: list[list[int]], n: int)
+def identify identical(snowflakes[][6]: list[list[int]], n: int):
+    i = 0
+    j = 1
+    for i in range(n):
+        for j in range(n)
 
 def main():
     global snowflakes
