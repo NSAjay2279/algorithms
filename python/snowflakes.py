@@ -1,16 +1,6 @@
 SIZE = 100000
 SNOWFLAKES = [][] * SIZE * 6
 
-def identify_identical(values: list, n: int):
-    i = 0
-    j = 1
-    for i in range(n):
-        for j in range(n):
-            if values[i] == values[j]:
-                print("Twin integers found.\n");
-                return;
-    print("No two integers are alike.\n")
-
 def identical_right(snow1: list, snow2: list, start: int):
     offset = 0
     for offset in range(6):
@@ -40,9 +30,13 @@ def are_identical(snow1: list[int], snow2: list):
 
 def identify identical(snowflakes[][6]: list[list[int]], n: int):
     i = 0
-    j = 1
+    j = i + 1
     for i in range(n):
-        for j in range(n)
+        for j in range(n):
+            if are_identical(snowflakes[i], snowflakes[j]):
+                print("Twin snowflakes found.\n")
+                return
+    print("No two snowflakes are alike.\n");
 
 def main():
     global snowflakes
