@@ -29,7 +29,7 @@ def are_identical(snow1: list[int], snow2: list[int]) -> bool:
         return 0
 
 
-def identify_identical(snowflakes[][6]: global list[list[int]], n: int) -> None:
+def identify_identical(snowflakes: list[list[int]], n: int) -> None:
     i = 0
     j = i + 1
     for i in range(n):
