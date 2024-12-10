@@ -40,7 +40,7 @@ def are_identical(snow1: list, snow2: list):
 
 def main():
     global snowflakes
-    n = 0,
+    n = 0
     i = 0
     j = 0
     n = int(input())
