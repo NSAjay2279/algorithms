@@ -44,7 +44,7 @@ def main():
     i = 0
     j = 0
     n = int(input())
-    snowflakes[i][j] = int(input())
+    snowflakes = list(map(int, input().split()))
     indentify_indentical(snowflakes, n)
 
 if __name__ == "__main__":
