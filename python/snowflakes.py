@@ -1,5 +1,6 @@
-def identify_identical(values[]: list, n: int):
-    i = 0, j = i + 1;
+def identify_identical(values: list, n: int):
+    i = 0;
+    j = i + 1;
     for i in range(n):
         for j in range(n):
             if values[i] == values[j]:
@@ -12,5 +13,5 @@ def main():
     identify_identical(a, 5)
 
 
-if __name__ = "main":
+if __name__ == "main":
     main()
