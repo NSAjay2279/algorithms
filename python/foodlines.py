@@ -23,8 +23,9 @@ def main():
     m = 0
     i = 0
     n, m = list(map(int, input().split()))
+    people_per_line = list(map(int, input().split()))
     for i in range(n):
-        lines[i] = [map(int, input().split())].index(i)
+        lines[i] = people_per_line[i]
     solve(lines, n, m)
 
 
