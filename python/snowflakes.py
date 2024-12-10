@@ -1,5 +1,5 @@
 SIZE = 100000
-
+SNOWFLAKES = [][6]
 
 def identify_identical(values: list, n: int):
     i = 0
