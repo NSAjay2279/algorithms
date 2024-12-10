@@ -12,9 +12,8 @@ def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     snow2_index = 0
     for offset in range(6):
-        snow2_index = start - offset
         if snow2_index <= -1:
-            snow2_index = snow2_index + 6
+            snow2_index = (start - offset) % 6
         if snow1[offset] != snow2[snow2_index]:
             return 0
     return 1
