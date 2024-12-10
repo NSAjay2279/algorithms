@@ -1,5 +1,4 @@
 SIZE = 100000
-snowflakes = [[0] * 6 for _ in range(SIZE)]
 
 def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
     for offset in range(6):
@@ -34,6 +33,7 @@ def identify_identical(snowflakes: list[list[int]], n: int) -> None:
     print("No two snowflakes are alike.\n");
 
 def main():
+    snowflakes = [[0] * 6 for _ in range(SIZE)]
     n = int(input())
     for i in range(n):
         snowflakes[i][j] = (list(map(int, input().split())))
