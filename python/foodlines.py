@@ -15,7 +15,7 @@ def solve(lines, n, m):
     for i in range(m):
         shortest = shortest_line_index(lines, n)
         print(lines[shortest])
-        lines[sh]
+        lines[shortest] += 1
 
 
 def main():
