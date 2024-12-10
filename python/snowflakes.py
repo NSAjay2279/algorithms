@@ -1,7 +1,7 @@
 SIZE = 100000
-SNOWFLAKES = [SIZE][6]
+SNOWFLAKES = [[0] * 6 for _ in range(SIZE)]
 
-def identical_right(snow1: list, snow2: list, start: int):
+def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     for offset in range(6):
         if snow2_index != snow2[(start + offset) % 6]:
