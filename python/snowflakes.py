@@ -25,7 +25,7 @@ def are_identical(snow1: list[int], snow2: list[int]) -> bool:
             return True
         if identical_left(snow1, snow2, start):
             return 1
-    return 0
+    return False
 
 
 def identify_identical(snowflakes: list[list[int]], n: int) -> None:
