@@ -4,7 +4,11 @@ shortest_line_index(lines, n):
 
 
 
-solve(lines, n, m)
+solve(lines, n, m):
+    i = 0
+    shortest = 0
+    for i in range(m):
+        
 
 
 def main():
