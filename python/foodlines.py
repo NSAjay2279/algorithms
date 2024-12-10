@@ -1,5 +1,5 @@
 MAX_LINES = 100
-#include <
+
 def shortest_line_index(lines, n):
     j = 1
     shortest = 0
@@ -15,7 +15,6 @@ def solve(lines, n, m):
     for i in range(m):
         shortest = shortest_line_index(lines, n)
         print(lines[shortest])
-        std::cout << lines[shortest]
         lines[shortest] += 1
 
 
