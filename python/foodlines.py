@@ -24,7 +24,7 @@ def main():
     i = 0
     n, m = list(map(int, input().split()))
     for i in range(n):
-        lines[i] = input()
+        lines[i] = [map.(int, input().split())].[i]
     solve(lines, n, m)
 
 
