@@ -1,6 +1,7 @@
-gloab 5
+x = 5
 
 def f():
+    global x
     print(x)
     x += 1
 
