@@ -12,8 +12,8 @@ def main():
     n = 0
     m = 0
     i = 0
-    n, m = input().split(,)
-    
+    n, m = input().split()
+    for i in range()
 
 
 main()
