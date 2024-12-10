@@ -38,6 +38,8 @@ def are_identical(snow1: list, snow2: list):
             return 1
         return 0
 
+def identify identical(snowflakes[][6]: list(list), n: int)
+
 def main():
     global snowflakes
     n = 0
@@ -46,7 +48,8 @@ def main():
     n = int(input())
     for i in range(n):
         for j in range(6):
-            snowflakes[i][j] = input()
+            snowflakes[i][j] = int(input())
+        indentify_indentical(snowflakes, n)
 
 if __name__ == "__main__":
     main()
