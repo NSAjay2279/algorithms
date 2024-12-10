@@ -1,6 +1,6 @@
 def identify_identical(values: list, n: int):
     i = 0;
-    j = i + 1;
+    j = 1;
     for i in range(n):
         for j in range(n):
             if values[i] == values[j]:
