@@ -16,7 +16,7 @@ def match_left(snow1, snow2, start):
         index = start - offset
         if snow2_index <= -1:
             index = index % 6
-        if snow1[offset] != snow2[snow2_index]:
+        if snow1[offset] != snow2[index]:
             return False
     return True
 
