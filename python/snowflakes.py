@@ -1,13 +1,15 @@
 SIZE = 100000
 
-def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
+
+def match_right(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     for offset in range(6):
         if snow1[offset] != snow2[(start + offset) % 6]:
             return False
     return True
 
-def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
+
+def match_left(snow1: list[int], snow2: list[int], start: int) -> bool:
     offset = 0
     snow2_index = 0
     for offset in range(6):
@@ -17,6 +19,7 @@ def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
         if snow1[offset] != snow2[snow2_index]:
             return False
     return True
+
 
 def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     start = 0
@@ -28,7 +31,7 @@ def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     return False
 
 
-def identify_identical(snowflakes: list[list[int]], n: int) -> None:
+def find_twins(snowflakes: list[list[int]], n: int) -> None:
     i = 0
     j = 0
     for i in range(n):
@@ -43,7 +46,7 @@ def main():
     n = 0
     n = int(input())
     snowflakes = [list(map(int, input().split())) for _ in range(n)]
-    identify_identical(snowflakes, n)
+    find_twins(snowflakes, n)
 
 if __name__ == "__main__":
     main()
