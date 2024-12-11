@@ -9,7 +9,7 @@ def shortest_line_index(lines: list[int], n: int) -> int:
     return shortest
 
 
-def solve(lines: list[int], n: int, m: int):
+def solve(lines: list[int], n: int, m: int) -> None:
     i = 0
     shortest = 0
     for i in range(m):
@@ -18,7 +18,7 @@ def solve(lines: list[int], n: int, m: int):
         lines[shortest] += 1
 
 
-def main():
+def main() -> None:
     lines = [0 for _ in range(MAX_LINES)]
     n = 0
     m = 0
