@@ -1,12 +1,15 @@
 SIZE = 100000
 
 def identical_right(snow1: list[int], snow2: list[int], start: int) -> bool:
+    offset = 0
     for offset in range(6):
         if snow1[offset] != snow2[(start + offset) % 6]:
             return False
     return True
 
 def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
+    offset = 0
+    snow2_index = 0
     for offset in range(6):
         snow2_index = start - offset
         if snow2_index <= -1:
@@ -16,6 +19,7 @@ def identical_left(snow1: list[int], snow2: list[int], start: int) -> bool:
     return True
 
 def are_identical(snow1: list[int], snow2: list[int]) -> bool:
+    start = 0
     for start in range(6):
         if identical_right(snow1, snow2, start):
             return True
