@@ -1,13 +1,17 @@
 MAX_LINES = 100
 
 def shortest_line_index(lines, n):
-    for j in range(1, n):
+    j = 1
+    shortest = 0
+    for j in range(n):
         if lines[j] < lines[shortest]:
             shortest = j
     return shortest
 
 
 def solve(lines, n, m):
+    i = 0
+    shortest = 0
     for i in range(m):
         shortest = shortest_line_index(lines, n)
         print(lines[shortest])
