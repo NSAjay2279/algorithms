@@ -11,11 +11,11 @@ def match_right(snow1, snow2, start):
 
 def match_left(snow1, snow2, start):
     offset = 0
-    snow2_index = 0
+    index = 0
     for offset in range(6):
-        snow2_index = start - offset
+        index = start - offset
         if snow2_index <= -1:
-            snow2_index = snow2_index % 6
+            index = index % 6
         if snow1[offset] != snow2[snow2_index]:
             return False
     return True
