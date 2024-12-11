@@ -25,6 +25,8 @@ def are_identical(snow1: list[int], snow2: list[int]) -> bool:
 
 
 def identify_identical(snowflakes: list[list[int]], n: int) -> None:
+    i = 0
+    j = 0
     for i in range(n):
         for j in range(i+1, n):
             if are_identical(snowflakes[i], snowflakes[j]):
@@ -34,6 +36,7 @@ def identify_identical(snowflakes: list[list[int]], n: int) -> None:
 
 def main():
     snowflakes = [[0] * 6 for _ in range(SIZE)]
+    n = 0
     n = int(input())
     snowflakes = [list(map(int, input().split())) for _ in range(n)]
     identify_identical(snowflakes, n)
