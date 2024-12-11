@@ -24,9 +24,9 @@ def match_left(snow1: list[int], snow2: list[int], start: int) -> bool:
 def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     start = 0
     for start in range(6):
-        if identical_right(snow1, snow2, start):
+        if match_right(snow1, snow2, start):
             return True
-        if identical_left(snow1, snow2, start):
+        if match_left(snow1, snow2, start):
             return True
     return False
 
