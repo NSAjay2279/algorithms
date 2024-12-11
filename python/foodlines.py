@@ -22,7 +22,6 @@ def main():
     lines = [0 for _ in range(MAX_LINES)]
     n = 0
     m = 0
-    i = 0
     n, m = list(map(int, input().split()))
     lines = list(map(int, input().split()))
     solve(lines, n, m)
