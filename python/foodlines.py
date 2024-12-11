@@ -1,22 +1,22 @@
 MAX_LINES = 100
 
 
-def min_index(lines, n):
+def min_idx(lines, n):
     j = 1
-    shortest = 0
+    min_idx = 0
     for j in range(n):
-        if lines[j] < lines[shortest]:
-            shortest = j
-    return shortest
+        if lines[j] < lines[min_idx]:
+            min_idx = j
+    return min_idx
 
 
 def solve(lines, n, m):
     i = 0
-    shortest = 0
+    min_idx = 0
     for i in range(m):
-        shortest = min_index(lines, n)
-        print(lines[shortest])
-        lines[shortest] += 1
+        min_idx_val = min_idx(lines, n)
+        print(lines[min_idx_val])
+        lines[min_idx_val] += 1
 
 
 def main():
