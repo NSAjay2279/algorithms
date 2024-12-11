@@ -21,7 +21,7 @@ def match_left(snow1, snow2, start):
     return True
 
 
-def are_identical(snow1, snow2):
+def are_identical(snow1: list[int], snow2: list[int]):
     start = 0
     for start in range(6):
         if match_right(snow1, snow2, start):
@@ -31,7 +31,7 @@ def are_identical(snow1, snow2):
     return False
 
 
-def find_twins(snowflakes, n):
+def find_twins(snowflakes: List[List[int]], n):
     i = 0
     j = 0
     for i in range(n):
