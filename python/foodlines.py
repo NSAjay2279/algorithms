@@ -1,7 +1,7 @@
 MAX_LINES = 100
 
 
-def min_index(lines: list[int], n: int) -> int:
+def min_index(lines, n):
     j = 1
     shortest = 0
     for j in range(n):
@@ -10,7 +10,7 @@ def min_index(lines: list[int], n: int) -> int:
     return shortest
 
 
-def solve(lines: list[int], n: int, m: int) -> None:
+def solve(lines, n, m):
     i = 0
     shortest = 0
     for i in range(m):
@@ -19,7 +19,7 @@ def solve(lines: list[int], n: int, m: int) -> None:
         lines[shortest] += 1
 
 
-def main() -> None:
+def main():
     lines = [0 for _ in range(MAX_LINES)]
     n = 0
     m = 0
