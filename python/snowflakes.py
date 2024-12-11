@@ -1,7 +1,7 @@
 SIZE = 100000
 
 
-def match_right(snow1: list[int], snow2: list[int], start: int) -> bool:
+def match_right(snow1, snow2, start):
     offset = 0
     for offset in range(6):
         if snow1[offset] != snow2[(start + offset) % 6]:
@@ -21,7 +21,7 @@ def match_left(snow1, snow2, start):
     return True
 
 
-def are_identical(snow1: list[int], snow2: list[int]) -> bool:
+def are_identical(snow1, snow2):
     start = 0
     for start in range(6):
         if match_right(snow1, snow2, start):
@@ -31,7 +31,7 @@ def are_identical(snow1: list[int], snow2: list[int]) -> bool:
     return False
 
 
-def find_twins(snowflakes: list[list[int]], n: int) -> None:
+def find_twins(snowflakes, n):
     i = 0
     j = 0
     for i in range(n):
