@@ -9,7 +9,7 @@ def match_right(snow1: list[int], snow2: list[int], start: int) -> bool:
     return True
 
 
-def match_left(snow1: list[int], snow2: list[int], start: int) -> bool:
+def match_left(snow1, snow2, start):
     offset = 0
     snow2_index = 0
     for offset in range(6):
